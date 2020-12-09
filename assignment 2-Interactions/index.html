@@ -1,0 +1,54 @@
+<!DOCTYPE html>  <!-- header to indicate this document is written by HTML5 -->
+<html lang="en-US"> 
+  <head>
+  	<meta charset="utf-8"> <!-- required element in HTML5 -->
+	
+	<title>Birthday Card</title>
+	<link rel="stylesheet" href="CSS/style.css">   <!-- link to external css file -->
+	 <script src="JS/script.js"></script> 		  <!-- link to external js file -->
+
+  </head>
+
+  <body>
+  
+    <div id="outside">
+    
+      <p id="outside-title">Happy Birthday!</p>
+
+      <img id="outside-pic" src="img/cake.jpg" alt="cake img">  <!-- replace img here -->
+	  
+      <p><button onclick="open_card()">Click to open</button></p>
+      
+    </div>
+  
+    <div id="inside">
+    
+      <p id="inside-title"> Happy Birthday! </p>
+      
+      <img id="inside-pic" src="img/quarantine.jpg" alt="quarantine img"> <!-- replace img here -->
+      
+      <p id="message">
+        Happy birthday to You! <!-- modify the text content here to add specific birthday message -->
+      </p>
+        <div>
+              <form action="reply.html">
+              <label for  = "wishinput">Enter your birthday wish:</label>
+              <input type="tex" id="wishinput" name="wishinput">
+              <input type="submit" value="Submit">
+            </form>
+   
+        </div>
+      <p>
+        </p>
+        <div>
+           <a href="https://www.famousbirthdays.com/"> Visit Famous Birthdays! </a> <!--add link here-->
+        </div>
+      <p>
+        <button onclick="close_card()">Click to close</button>
+      </p>
+
+    </div>
+    
+  </body>
+  
+</html>

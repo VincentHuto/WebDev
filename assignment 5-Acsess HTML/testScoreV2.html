@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+    <title>Test Score App</title>
+	<link rel="stylesheet" href="score.css">
+</head>
+<body>
+	<main>
+		<h2>The Test Scores App</h2>
+		<img src="teacher.png" id="teacher" alt="teacher" width="177" height="277">
+		
+		<div id="s1"> 
+			<label for="numscores">How many tests you want to consider?</label>
+			<input type='number' id='numscores' min='1' max='5' value='1'>
+		</div>
+		
+		<div id="testInputs">
+			<label for="score1">Test-1:</label> 
+			<input type='number' id='score1' value='150'/><br>
+		</div>	
+		
+		<div id='result'> 
+			<label for="scoreTotal">Total Points:</label>
+			<input type="number" id="scoreTotal" disabled><br>
+			
+			<label for="scoreAvg">Avg Grade:</label>
+			<input type="number" id="scoreAvg" disabled><br>
+			
+			<label for="scoreFinal">Final Letter Grade:</label>
+			<input type="text" id="scoreFinal" disabled><br>
+			
+			<label>&nbsp;</label>
+			<input type="button" id="calculate" value="Calculate"> 
+		</div>
+			
+	</main>
+	<script src="testScoreV2.js"> </script>
+</body>
+</html>

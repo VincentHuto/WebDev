@@ -1,0 +1,69 @@
+#outside {
+  z-index: 1;
+  position: absolute;
+  background-color: red; /*Changed color to red*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-origin: 0;
+}
+
+.open-card {
+  transform: rotateY(90deg);
+}
+
+#outside-title {
+  color: green; /*Changed color to green*/
+  font-family: Comic Sans MS; /* Changed font to comic sans */
+  font-size: 18pt; /* Changed font size to 18 */
+  text-align: center;
+}
+
+#outside-pic {
+  width: 150px;
+  height: 150px;
+}
+
+#outside-help {
+  color: black;
+  font-family: Courier;
+  font-size: 12pt;
+  text-align: center;
+  padding: 20px;
+}
+
+#inside {
+  z-index: 0;
+  position: absolute;
+  background-color: orange;/* Changed color to orange*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#inside-title {
+  color: pink;
+  font-family: Comic Sans MS; /* Changed font to comic sans */
+  font-size: 18pt; /* Changed font size to 18 */
+  text-align: center;
+}
+
+#inside-pic {
+   width: 50%;
+  height: 150px;
+  height: auto;
+
+}
+
+#message {
+  color: pink;
+  font-family: Courier;
+  font-size: 12pt;
+  text-align: center;
+}
+
+button {
+  background: pink;
+}
+

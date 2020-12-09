@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Wellfleet);
+body {
+    font-family: 'Wellfleet', Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 60%;
+min-width: 600px;
+    border: 3px solid blue;
+    padding: 0 1em .5em;
+}
+h1 {
+	color: blue;
+	margin: .5em 0;
+}
+#teacher {
+	float:right;
+	margin:0px 30px 0px 0px;}
+
+	
+label {
+	float: left;
+    width: 10em;
+    text-align: right;
+	margin-bottom: .5em;
+}
+input {
+    width: 5em;
+	margin-left: 1em;
+    margin-bottom: .5em;
+	
+}
+input.error{
+	background-color: yellow;
+	
+}
+#s1 {display: inline-block;}
+#s1 input {
+	vertical-align: center;
+	float: left;
+
+}
+

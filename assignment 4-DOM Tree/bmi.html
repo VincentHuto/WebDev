@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>BMI Calculation</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+	<main>
+		<h1>Body Mass Index Calculation Application</h1>
+		<!-- two input boxes for height and weight with labels -->
+        <label for="heightInput">Enter your height in inches:</label>
+		<input type='text' id='heightInput'><br>
+		<label for="weightInput">Enter your weight in pounds:</label>
+		<input type='text' id='weightInput'><br>
+		
+		<!-- a calculate button with label -->
+		<label>&nbsp;</label>
+		<input type="button" id="calculate" value="Calculate BMI"> 
+		
+        <!-- a <div> element for displaying BMI or error message -->
+		<div id="bmiOutput"></div>
+	</main>
+	 <script> 
+	    /* Add JS code in the following function to get user inputs, validate inputs, 
+		calculate BMI and display BMI or error message. Pay attention to the logical flow 
+		and a few details in the implementation as we discussed in class*/
+	    var processEntries = function() {	
+			var hI = document.getElementById('heightInput').value;
+			var wI = document.getElementById('weightInput').value;
+			var bmi = (703 * wI)/(hI*hI);
+
+			if(isNaN(hI)){
+				document.getElementById('heightInput').setAttribute('class' ,'error');
+			bmiOutput.textContent='Invalid Heigt Input NaN';
+
+			} else{
+				document.getElementById('heightInput').removeAttribute('class' ,'error');
+			}
+			if(isNaN(wI)){
+			 		document.getElementById('weightInput').setAttribute('class' ,'error');
+			bmiOutput.textContent='Invalid Weight Input NaN';
+			}else{
+				document.getElementById('weightInput').removeAttribute('class' ,'error');
+			}
+			if(isNaN(wI) && isNaN(hI)){
+					document.getElementById('heightInput').setAttribute('class' ,'error');
+			 		document.getElementById('weightInput').setAttribute('class' ,'error');
+			bmiOutput.textContent= 'Invalid Heigt Input NaN \n Invalid Weight Input NaN';
+			}
+			if(!isNaN(wI) && !isNaN(hI)){
+				bmiOutput.textContent=bmi.toFixed(1);
+			}
+       }; 
+	   
+	   //handler button click event 
+		document.getElementById('calculate').onclick = processEntries;
+    </script>
+</body>1
+</html>
