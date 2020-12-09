@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auto Shop - Used Cars</title>
+    <!--Include bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	
+	<!-- Include JQuery library -->	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	 
+	<!-- Include external js file (JQuery_auto_shop.js) here -->
+<script src="JQuery_auto_shop.js"></script>
+
+	<style>
+		 td{ padding: 5px; margin: 5px;}
+		.addme { height: 28px; width: 80px; padding: 0; }
+		.clm-label { background: #333; color: #fff;}
+		.hide {display: none}	
+	</style>
+	
+</head>
+<body class='container'>
+	<div class='col-md-9' >
+    <h2>Choose a car type </h2> <!--drop down list -->
+	<select id="car-category" name="car-category">
+		<option value='null'>Loading....</option>
+	</select>
+	</div>
+	<div class='col-md-9'>
+	   <h2>Car List</h2> <!-- car list -->
+		<table class='table hide' id='car-list'>
+		<thead><!--car list table header -->
+		<tr class='clm-label'> 
+		   <th class='clm-label'>Stock ID</th>
+		   <th class='clm-label'>Make</th>
+		   <th class='clm-label'>Model</th>
+		   <th class='clm-label'>Year</th>
+		   <th class='clm-label'>Type</th>
+		   <th class='clm-label'>Color</th>
+		   <th class='clm-label'>Price</th>
+		   <th class='clm-label'>Mileage</th>
+		   <th class='clm-label'>Select</th>
+		 </tr>  
+		 </thead>
+		 <tbody><!--car list table body -->
+		 </tbody>
+		</table>
+	</div>
+	<div class='col-md-3'>
+		<h2>Shopping Cart</h2>
+		<div>You have <span id="items">0</span>  items in your Shopping Cart</div>
+		<table class='table hide' id='mycart'><!--Shopping Cart list table -->
+		<thead><!--table header -->
+			<tr>
+				<th class='clm-label'>Stock Id</th>
+				<th class='clm-label'>Make</th>
+				<th class='clm-label'>Model</th>
+				<th class='clm-label'>Price</th>
+				<th class='clm-label'>Quantity</th>
+				<th class='clm-label'>Type</th>
+				<th class='clm-label'></th>
+			</tr>
+		</thead>
+		<tbody><!--table body -->
+		</tbody>
+		</table>
+	</div>
+</div>
+
+<div class='col-md-9' id="checkout">
+    <h2>Check Out</h2>
+	<table class='table hide' ><!--Check Out table -->
+		<tr><th class='col-xs-4'>Subtotal: </th><td class='col-xs-2' id='sub-total'>0</td></tr>
+		<tr><th class='col-xs-4'>Taxes (6%): </th><td class='col-xs-2' id='taxes'>0</td></tr>
+		<tr><th class='col-xs-4'>Registration fee (5%): </th><td class='col-xs-2' id='registration'>0</td></tr>
+		<tr><th class='col-xs-4'>Total due: </th><td class='col-xs-2' id='total'>0</td></tr>
+	</table>
+</div>
+
+</body>
+</html>
+
